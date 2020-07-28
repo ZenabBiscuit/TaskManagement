@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "project-management-9bd46": {
+      "hosting": {
+        "project-management": [
+          "project-management-9bd46"
+        ]
+      }
+    }
+  }
+}

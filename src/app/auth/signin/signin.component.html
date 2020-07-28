@@ -1,0 +1,25 @@
+<div class="main-div">
+<mat-card class="card">
+   <mat-card-header>
+     <mat-card-title>Login</mat-card-title>
+   </mat-card-header>
+   <mat-card-content>
+     <form class="form">
+             <mat-form-field class="full-width">
+             <input matInput placeholder="Email" [(ngModel)]="email" name="email" required>
+             </mat-form-field>
+             <br>
+       <mat-form-field class="full-width">
+           <input matInput placeholder="Password" [type]="hide ? 'password' : 'text'" [(ngModel)]="password"type="password" name="password" required>
+           <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+        </mat-form-field>
+     </form>
+   </mat-card-content>
+   <mat-card-actions>
+     <button mat-raised-button (click)="login()" color="primary">Login</button>
+   </mat-card-actions>
+   <hr>
+   <mat-card-footer>Don't have an account?<a routerLink="/signup">Register now</a></mat-card-footer>
+ </mat-card>
+
+</div>

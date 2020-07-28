@@ -1,0 +1,29 @@
+<div class="root">
+  <div class="navbar navbar-expand-lg bg-dark navbar-dark">
+    <div class="collapse navbar-collapse" id="navbarNav">
+    <div class="navbar-brand">
+      <div class="navbar-item">
+        <h1 class="app-name has-gradient">Task Management</h1>
+      </div>
+    </div>
+
+    <ul class="navbar-nav mr-auto"></ul>
+
+    <ul class="navbar-nav">
+      <li *ngIf="!auth.isSignedIn" class="nav-item">
+        <button mat-raised-button class="nav-link text-dark" routerLink="/signin">Sign In</button>
+      </li>
+
+      <li *ngIf="auth.isSignedIn" class="nav-item">
+        <button mat-raised-button class="nav-link text-dark" routerLink="/signin" (click)=LogOut()>Logout</button>
+      </li>
+    </ul>
+  </div>
+  </div>
+</div>
+
+
+
+
+
+
